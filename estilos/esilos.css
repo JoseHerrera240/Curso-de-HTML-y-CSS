@@ -31,3 +31,56 @@ nav li a{
 nav li a:hover{
     color: black;
 }
+
+/*-----------------------------------main section */
+
+.main_section{
+    padding: 20%;
+    text-align: center;
+   
+    
+}
+
+.products{
+    background-image: url("../img/curve.webp");
+     max-height: 80px;
+    background-position: center;
+    background-size: cover  top ;
+    display: flex;
+   padding: 20%;
+  
+}
+
+.product{
+    padding: 10px;
+    margin-top: -230px;
+
+}
+
+.product .content {
+    padding: 20px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 0 1px #c1bcbc;
+    text-align: center;
+
+}
+.img_content{
+    text-align: center;
+}
+
+.main_button{
+    background-color: #838383 ;
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    color: black;
+    border: 0;
+    
+
+}
+
+.main_button:hover{
+    background-color: #535151 ;
+}
+

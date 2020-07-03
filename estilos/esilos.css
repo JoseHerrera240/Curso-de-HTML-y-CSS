@@ -1,15 +1,25 @@
+/*-------------------- comienzo de variables*/
+:root{
+    --gray-color:#888887;
+    --black-color:black;
+    --normal:12px;
+   
+    
+}
+
+/*-------------------- fin de variables*/
 html,body{
     padding: 0px;
     margin: 0px;
     font-size: 12px;
     font-family: helvetica;
-
+    
 }
 
 nav{
     display: flex;
-    background-color: #888887;
-    padding: 10px;
+    background-color: var(--gray-color);
+    padding: var(--normal);
     color: white;
     justify-content: space-between;
     align-items: center;
@@ -23,11 +33,11 @@ nav li{
 }
 
 nav li a{
-    color: black ;
+    color: var(--black-color) ;
     text-decoration: none;
 }
 nav li a:hover{
-    color: black;
+    color: var(--black-color);
 }
 
 /*-----------------------------------main section */
@@ -47,14 +57,14 @@ nav li a:hover{
 }
 
 .product{
-    padding: 10px;
+    padding: var(--normal);
     margin-top: -230px
 }
 
 .product .content {
     padding: 20px;
-    background-color: white;
-    padding: 15px;
+    background-color: var(--gray-color);
+    padding: var(--normal);
     box-shadow: 0 0 1px #c1bcbc;
     text-align: center;
 }
@@ -63,15 +73,28 @@ nav li a:hover{
 }
 
 .main_button{
-    background-color: #838383 ;
+    background-color: var(--gray-color);
     width: 100%;
-    padding: 10px;
-    font-size: 12px;
-    color: black;
+    padding: var(--normal);
+    font-size: var(--normal);
+    color: var(--black-color);
     border: 0;
 }
 
 .main_button:hover{
-    background-color: #535151 ;
+    background-color: #c2bebe ;
 }
 
+/*comienzo del reto*/
+.mini_galeria{
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.boxgalery{
+    box-shadow: 0 20px 40px #c2bebe ;
+    padding: 20px;
+    background-color: var(--gray-color);
+    margin-top: -130px;
+}

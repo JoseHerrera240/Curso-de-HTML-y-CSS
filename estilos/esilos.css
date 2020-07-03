@@ -1,33 +1,100 @@
+/*-------------------- comienzo de variables*/
+:root{
+    --gray-color:#888887;
+    --black-color:black;
+    --normal:12px;
+   
+    
+}
+
+/*-------------------- fin de variables*/
 html,body{
     padding: 0px;
     margin: 0px;
     font-size: 12px;
     font-family: helvetica;
-
+    
 }
 
 nav{
     display: flex;
-    background-color: #888887;
-    padding: 10px;
+    background-color: var(--gray-color);
+    padding: var(--normal);
     color: white;
     justify-content: space-between;
     align-items: center;
 }
 nav ul{
-    display: flex;
-   
+    display: flex; 
 }
 nav li{
     padding-right: 25px;
     list-style: none ;
-    
 }
 
 nav li a{
-    color: black ;
+    color: var(--black-color) ;
     text-decoration: none;
 }
 nav li a:hover{
-    color: black;
+    color: var(--black-color);
+}
+
+/*-----------------------------------main section */
+
+.main_section{
+    padding: 20%;
+    text-align: center; 
+}
+
+.products{
+    background-image: url("../img/curve.webp");
+     max-height: 80px;
+    background-position: center;
+    background-size: cover  top ;
+    display: flex;
+   padding: 20%;
+}
+
+.product{
+    padding: var(--normal);
+    margin-top: -230px
+}
+
+.product .content {
+    padding: 20px;
+    background-color: var(--gray-color);
+    padding: var(--normal);
+    box-shadow: 0 0 1px #c1bcbc;
+    text-align: center;
+}
+.img_content{
+    text-align: center;
+}
+
+.main_button{
+    background-color: var(--gray-color);
+    width: 100%;
+    padding: var(--normal);
+    font-size: var(--normal);
+    color: var(--black-color);
+    border: 0;
+}
+
+.main_button:hover{
+    background-color: #c2bebe ;
+}
+
+/*comienzo del reto*/
+.mini_galeria{
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.boxgalery{
+    box-shadow: 0 20px 40px #c2bebe ;
+    padding: 20px;
+    background-color: var(--gray-color);
+    margin-top: -130px;
 }

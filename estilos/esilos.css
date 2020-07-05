@@ -12,8 +12,9 @@ html,body{
     padding: 0px;
     margin: 0px;
     font-size: 12px;
-    font-family: helvetica;
-    
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+    font-size: 17px;
 }
 
 nav{
@@ -43,48 +44,45 @@ nav li a:hover{
 /*-----------------------------------main section */
 
 .main_section{
-    padding: 20%;
-    text-align: center; 
+    text-align: center;
+    
 }
-
-.products{
-    background-image: url("../img/curve.webp");
-     max-height: 80px;
-    background-position: center;
-    background-size: cover  top ;
+.menu{
+    text-align: center;
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+    padding: 100px;
+}
+.row{
     display: flex;
-   padding: 20%;
 }
-
-.product{
-    padding: var(--normal);
-    margin-top: -230px
+.col-1{
+    width: 50% ;
 }
-
-.product .content {
-    padding: 20px;
-    background-color: var(--gray-color);
-    padding: var(--normal);
-    box-shadow: 0 0 1px #c1bcbc;
-    text-align: center;
+.col-2{
+    width: 50% ;
 }
-.img_content{
-    text-align: center;
+.col-1, .col-2{
+    padding: 10px;
+    border: 10px solid #c9c9c8;
+    background: var(--gray-color);
+    height: 100px;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-.main_button{
-    background-color: var(--gray-color);
-    width: 100%;
-    padding: var(--normal);
-    font-size: var(--normal);
-    color: var(--black-color);
-    border: 0;
+@media (max-width: 900px){
+    .row{
+        display: inherit;
+    }
+    .col-1, .col-2{
+        padding: 10px;
+    }
 }
-
-.main_button:hover{
-    background-color: #c2bebe ;
-}
-
 /*comienzo del reto*/
 .mini_galeria{
     display: flex;
@@ -97,4 +95,10 @@ nav li a:hover{
     padding: 20px;
     background-color: var(--gray-color);
     margin-top: 60px;
+}
+/*footer*/
+.footer{
+    background-color: var(--gray-color);
+    padding: 10px;
+    text-align: center;
 }

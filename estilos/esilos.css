@@ -12,8 +12,13 @@ html,body{
     padding: 0px;
     margin: 0px;
     font-size: 12px;
-    font-family: helvetica;
-    
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    ;
+}
+h1{
+    text-align: center;
 }
 
 nav{
@@ -41,60 +46,87 @@ nav li a:hover{
 }
 
 /*-----------------------------------main section */
-
+.menu{
+    font-size: 25px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
 .main_section{
-    padding: 20%;
-    text-align: center; 
-}
-
-.products{
-    background-image: url("../img/curve.webp");
-     max-height: 80px;
-    background-position: center;
-    background-size: cover  top ;
-    display: flex;
-   padding: 20%;
-}
-
-.product{
-    padding: var(--normal);
-    margin-top: -230px
-}
-
-.product .content {
-    padding: 20px;
-    background-color: var(--gray-color);
-    padding: var(--normal);
-    box-shadow: 0 0 1px #c1bcbc;
     text-align: center;
+    
 }
-.img_content{
-    text-align: center;
-}
-
 .main_button{
-    background-color: var(--gray-color);
-    width: 100%;
-    padding: var(--normal);
-    font-size: var(--normal);
-    color: var(--black-color);
-    border: 0;
+    list-style: none;
+    color: black;
 }
-
-.main_button:hover{
-    background-color: #c2bebe ;
+.menu{
+    text-align: center;
 }
-
+.container{
+    max-width: 900px;
+    margin: auto;
+    padding: 100px;
+}
+.row{
+    display: flex;
+}
+.col-1{
+    width: 25% ;
+}
+.col-2{
+    width: 25% ;
+}
+.col-3{
+    width: 25% ;
+}
+.col-4{
+    width: 25% ;
+}
+.col-1, .col-2, .col-3, .col-4{
+    padding: 10px;
+    border: 10px solid #c9c9c8;
+    background: var(--gray-color);
+    height: 100px;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 900px){
+    .row{
+        display: inherit;
+    }
+    .col-1, .col-2{
+        padding: 10px;
+    }
+}
 /*comienzo del reto*/
 .mini_galeria{
     display: flex;
-    padding: 20px;
-    text-align: center;
-    justify-content: center;
+    padding: 80px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .boxgalery{
     box-shadow: 0 20px 40px #c2bebe ;
     padding: 20px;
     background-color: var(--gray-color);
-    margin-top: -130px;
+    margin-top: 60px;
+}
+
+/*footer*/
+footer{
+    background-color: var(--gray-color);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-between;
+}
+footer .gmailp{
+    color: black;
+    text-decoration: none;
 }
